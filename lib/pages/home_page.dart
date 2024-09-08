@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           return Padding(
             padding: const EdgeInsets.only(left: 12.0, top: 12.0),
             child: IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: Colors.black,
               ),
