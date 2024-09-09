@@ -3,10 +3,12 @@ import "package:flutter/material.dart";
 
 class ShoeTile extends StatelessWidget {
   final Shoe shoe;
+  final void Function()? onTap;
 
   const ShoeTile({
     super.key,
     required this.shoe,
+    required this.onTap,
   });
 
   @override
@@ -31,9 +33,12 @@ class ShoeTile extends StatelessWidget {
           ),
 
           // Description
-          Text(
-            shoe.description,
-            style: TextStyle(color: Colors.grey.shade600),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Text(
+              shoe.description,
+              style: TextStyle(color: Colors.grey.shade600),
+            ),
           ),
 
           Padding(
@@ -70,17 +75,20 @@ class ShoeTile extends StatelessWidget {
                 ),
 
                 // Add to Cart Button
-                Container(
-                  padding: const EdgeInsets.all(20.0),
-                  decoration: const BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(12.0),
-                        bottomRight: Radius.circular(12.0),
-                      )),
-                  child: const Icon(
-                    Icons.add,
-                    color: Colors.white,
+                GestureDetector(
+                  onTap: onTap,
+                  child: Container(
+                    padding: const EdgeInsets.all(20.0),
+                    decoration: const BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(12.0),
+                          bottomRight: Radius.circular(12.0),
+                        )),
+                    child: const Icon(
+                      Icons.add,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ],
