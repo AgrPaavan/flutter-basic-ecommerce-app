@@ -5,6 +5,11 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void logout() {
+      Navigator.of(context).pop();
+      Navigator.of(context).pop();
+    }
+
     return Drawer(
       backgroundColor: Colors.grey.shade900,
       child: Column(
@@ -21,16 +26,19 @@ class MyDrawer extends StatelessWidget {
               ),
 
               // Other Pages
-              const Padding(
-                padding: EdgeInsets.only(left: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.home,
-                    color: Colors.white,
-                  ),
-                  title: Text(
-                    "Home",
-                    style: TextStyle(color: Colors.white),
+              GestureDetector(
+                onTap: () => Navigator.of(context).pop(),
+                child: const Padding(
+                  padding: EdgeInsets.only(left: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.home,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      "Home",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
               ),
@@ -50,16 +58,19 @@ class MyDrawer extends StatelessWidget {
               ),
             ],
           ),
-          const Padding(
-            padding: EdgeInsets.only(left: 25.0, bottom: 25.0),
-            child: ListTile(
-              leading: Icon(
-                Icons.logout,
-                color: Colors.white,
-              ),
-              title: Text(
-                "Logout",
-                style: TextStyle(color: Colors.white),
+          GestureDetector(
+            onTap: () => logout(),
+            child: const Padding(
+              padding: EdgeInsets.only(left: 25.0, bottom: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.logout,
+                  color: Colors.white,
+                ),
+                title: Text(
+                  "Logout",
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ),
           ),
