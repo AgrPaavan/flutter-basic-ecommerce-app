@@ -1,4 +1,4 @@
-# Basic Ecommerce App
+# Basic Sneaker Shop App
 
 ## Version 1.0
 
@@ -30,8 +30,8 @@ A basic e-commerce application for purchasing sneakers, complete with cart funct
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/agrpaavan/flutter-basic-ecommerce-app.git
-cd flutter-basic-ecommerce-app
+git clone https://github.com/agrpaavan/flutter-sneaker-shop-app.git
+cd flutter-sneaker-shop-app
 ```
 
 ### Install Dependencies
@@ -63,12 +63,12 @@ flutter run
 
 ## APK Download and Installation
 
-You can download the latest APK file from the [Releases](https://github.com/agrpaavan/flutter-basic-ecommerce-app/releases) section of this repository.
+You can download the latest APK file from the [Releases](https://github.com/agrpaavan/flutter-sneaker-shop-app/releases) section of this repository.
 
 ### Installation Instructions
 
 1. **Download the APK**:
-   - Go to the [Releases page](https://github.com/agrpaavan/flutter-basic-ecommerce-app/releases) and download the latest APK file.
+   - Go to the [Releases page](https://github.com/agrpaavan/flutter-sneaker-shop-app/releases) and download the latest APK file.
 
 2. **Install the APK**:
    - Follow the prompts to install the app on your Android device.
@@ -84,11 +84,11 @@ Feel free to fork this repository and make improvements or suggest features!
 
 ## Issues
 
-If you encounter any issues or have suggestions, please use the [Issue Tracker](https://github.com/agrpaavan/flutter-basic-ecommerce-app/issues) to report them.
+If you encounter any issues or have suggestions, please use the [Issue Tracker](https://github.com/agrpaavan/flutter-sneaker-shop-app/issues) to report them.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/agrpaavan/flutter-basic-ecommerce-app/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/agrpaavan/flutter-sneaker-shop-app/blob/main/LICENSE) file for details.
 
 ## Acknowledgments
 
